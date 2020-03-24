@@ -4,22 +4,22 @@ This control allows you to select one or more items from a list. The List can be
 
 Here is an example of the control:
 
-![ListItemPicker select list items](../listitempicker/assets/ListItemPicker1.png)
+![ListItemPicker select list items](../assets/ListItemPicker1.png)
 
-![ListItemPicker select list items](../listitempicker/assets/ListItemPicker2.png)
+![ListItemPicker select list items](../assets/ListItemPicker2.png)
 
 
-![ListItemPicker select list items](../listitempicker/assets/ListItemPicker4.png)
+![ListItemPicker select list items](../assets/ListItemPicker4.png)
 
-![ListItemPicker select list items](../listitempicker/assets/ListItemPicker5.png)
+![ListItemPicker select list items](../assets/ListItemPicker5.png)
 
-![ListItemPicker select list items](../listitempicker/assets/ListItemPicker6.png)
+![ListItemPicker select list items](../assets/ListItemPicker6.png)
 
-![ListItemPicker select list items](../listitempicker/assets/ListItemPicker-selectlist2.png)
+![ListItemPicker select list items](../assets/ListItemPicker-selectlist2.png)
 
-![ListItemPicker select list items](../listitempicker/assets/ListItemPicker-selectlist2.png)
+![ListItemPicker select list items](../assets/ListItemPicker-selectlist2.png)
 
-![ListItemPicker selected Items](../listitempicker/assets/ListItemPicker-selectedItems.png)
+![ListItemPicker selected Items](../assets/ListItemPicker-selectedItems.png)
 
 ## How to use this control in your solutions
 

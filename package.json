@@ -1,5 +1,5 @@
 {
-  "name": "listitempicker",
+  "name": "spfxcontrollistitempicker",
   "version": "0.0.1",
   "private": false,
   "main": "lib/index.js",
