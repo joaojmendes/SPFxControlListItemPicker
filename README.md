@@ -6,9 +6,6 @@ Here is an example of the control:
 
 ![ListItemPicker select list items](/assets/ListItemPicker2.png) 
 
-![ListItemPicker select list items](/assets/ListItemPicker3.png)
-
-
 ![ListItemPicker select list items](/assets/ListItemPicker4.png)
 
 ![ListItemPicker select list items](/assets/ListItemPicker5.png)
