@@ -2,7 +2,7 @@ declare var define: any;
 
 define([], () => {
   return {
-    RequiredMessage: "Por favor indique um valor válido.",
+    "RequiredMessage": "This field is required",
     'SiteBreadcrumbLabel': 'Website breadcrumb',
 
     'ListViewGroupEmptyLabel': 'Empty',
