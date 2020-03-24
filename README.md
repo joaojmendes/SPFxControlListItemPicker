@@ -6,20 +6,20 @@ Here is an example of the control:
 
 ![ListItemPicker select list items](/assets/ListItemPicker2.png) 
 
-![ListItemPicker select list items](/assets/ListItemPicker2.png)
+![ListItemPicker select list items](/assets/ListItemPicker3.png)
 
 
-![ListItemPicker select list items](../assets/ListItemPicker4.png)
+![ListItemPicker select list items](/assets/ListItemPicker4.png)
 
-![ListItemPicker select list items](../assets/ListItemPicker5.png)
+![ListItemPicker select list items](/assets/ListItemPicker5.png)
 
-![ListItemPicker select list items](../assets/ListItemPicker6.png)
+![ListItemPicker select list items](/assets/ListItemPicker6.png)
 
-![ListItemPicker select list items](../assets/ListItemPicker-selectlist2.png)
+![ListItemPicker select list items](/assets/ListItemPicker-selectlist2.png)
 
-![ListItemPicker select list items](../assets/ListItemPicker-selectlist2.png)
+![ListItemPicker select list items](/assets/ListItemPicker-selectlist2.png)
 
-![ListItemPicker selected Items](../assets/ListItemPicker-selectedItems.png)
+![ListItemPicker selected Items](/assets/ListItemPicker-selectedItems.png)
 
 ## How to use this control in your solutions
 
