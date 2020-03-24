@@ -1,53 +1,81 @@
-# listitempicker
+# ListItemPicker control
 
-This project uses [React](https://reactjs.org).
+This control allows you to select one or more items from a list. The List can be filtered to allow select items from a subset of items The item selection is based from a column value. The control will suggest items based on the inserted value.
 
-> This is where you include your project's documentation.
+Here is an example of the control:
 
-## Global dependencies
+![ListItemPicker select list items](../listitempicker/assets/ListItemPicker1.png)
 
-Requires Gulp globally installed:
+![ListItemPicker select list items](../listitempicker/assets/ListItemPicker2.png)
 
-```shell
-npm install --global gulp
+
+![ListItemPicker select list items](../listitempicker/assets/ListItemPicker4.png)
+
+![ListItemPicker select list items](../listitempicker/assets/ListItemPicker5.png)
+
+![ListItemPicker select list items](../listitempicker/assets/ListItemPicker6.png)
+
+![ListItemPicker select list items](../listitempicker/assets/ListItemPicker-selectlist2.png)
+
+![ListItemPicker select list items](../listitempicker/assets/ListItemPicker-selectlist2.png)
+
+![ListItemPicker selected Items](../listitempicker/assets/ListItemPicker-selectedItems.png)
+
+## How to use this control in your solutions
+
+- Check that you installed the `@pnp/spfx-controls-react` dependency. Check out the [getting started](../../#getting-started) page for more information about installing the dependency.
+- Import the control into your component:
+
+```TypeScript
+import { ListItemPicker } from '@pnp/spfx-controls-react/lib/listItemPicker';
+```
+- Use the `ListItemPicker` control in your code as follows:
+
+```TypeScript
+<ListItemPicker listId='da8daf15-d84f-4ab1-9800-7568f82fed3f'
+                columnInternalName='Title'
+                keyColumnInternalName='Id'
+                filter="Title eq 'SPFx'"
+                itemLimit={2}
+                onSelectedItem={this.onSelectedItem}
+                context={this.props.context} 
+                required=true
+                removeduplicates=true
+                />
 ```
 
-## Building the code
+- The `onSelectedItem` change event returns the list items selected and can be implemented as follows:
 
-Download & install all dependencies, build, bundle & package the project
-
-```shell
-# download & install dependencies
-npm install
-
-# transpile all TypeScript & SCSS => JavaScript & CSS
-gulp build
-
-# create component bundle & manifest
-gulp bundle
-
-# create SharePoint package
-gulp package-solution
+```TypeScript
+private onSelectedItem(data: { key: string; name: string }[]) {
+  for (const item of data) {
+    console.log(`Item value: ${item.key}`);
+    console.log(`Item text: ${item.name}`);
+  }
+}
 ```
+## Implementation
 
-These commands produce the following:
+The `ListItemPicker` control can be configured with the following properties:
 
-- **./lib**: intermediate-stage commonjs build artifacts
-- **./dist**: bundled script, along with other resources
-- **./temp/deploy**: all resources required by component(s) to deploy to a CDN (when `--ship` argument present)
 
-## Build options
+| Property | Type | Required | Description |
+| ---- | ---- | ---- | ---- |
+| columnInternalName | string | yes | InternalName of column to search and get values. |
+| keyColumnInternalName | string | no | InternalName of column to use as the key for the selection. Must be a column with unique values. Default: Id |
+| context | WebPartContext \| ExtensionContext | yes | SPFx web part or extention context |
+| listId | string | yes | Guid of the list. |
+| itemLimit | number | yes | Number of items which can be selected |
+| onSelectItem | (items: any[]) => void | yes | Callback function which returns the selected items. |
+| className | string | no | ClassName for the picker. |
+| webUrl | string | no | URL of the site. By default it uses the current site URL. |
+| defaultSelectedItems | any[] | no | Initial items that have already been selected and should appear in the people picker. |
+| suggestionsHeaderText | string | no | The text that should appear at the top of the suggestion box. |
+| noResultsFoundText | string | no | The text that should appear when no results are returned. |
+| disabled | boolean | no | Specifies if the control is disabled or not. |
+| filter | string | no | condition to filter list Item, same as $filter ODATA parameter|
+| placeholder | string | no | Short text hint to display in empty picker |
+| removeduplicates | boolean | no | Specifies if duplicate Items are removed form results
+| required | boolean | no |  Indicate if the control is required
 
-- `gulp clean`: Deletes all build output (**/dist**, **/lib**, **/temp**, etc.).
-- `gulp build`: Transpiles all TypeScript & SCSS to JavaScript & CSS, generates source map files & TypeScript type declaration files
-- `gulp bundle [--ship|-p|--production]`: Runs gulp task **build**, then uses webpack to create the JavaScript bundle(s) and component manifest(s) as defined in **./config/config.json**. The `--ship`, `-p` or `--production` argument specifies a production build that will generate minified bundles.
-- `gulp serve [--ship|-p|--production]`: Runs gulp tasks **build**, **bundle** & starts the local webserver. Depending on the project type, it opens the browser and navigates to the local workbench or specified URL (in the case of extension components). The `--ship`, `-p` or `--production` argument specifies a production build that modifies the resulting package for production hosting rather than local hosting of assets.
-- `gulp package-solution`: Creates the SharePoint Package (**.sppkg**) file.
-- `gulp dist`: Creates a production-ready SharePoint Package (**.sppkg**) file. The following gulp task gets executed in this specific order `gulp clean`, `gulp bundle`, `gulp package-solution.`
-- `gulp dev`: Creates a development-ready SharePoint Package (**.sppkg**) file. The following gulp task will be executed in this specific order `gulp clean`, `gulp bundle`, `gulp package-solution.`
-
-> View all available gulp tasks by running `gulp --tasks`
-
-More information on [SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/sharepoint-framework-overview)
-
-Generated with [pnp/spfx](https://github.com/pnp/generator-spfx/).
+ 

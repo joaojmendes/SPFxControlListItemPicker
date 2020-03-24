@@ -97,7 +97,7 @@ export class ListItemPicker extends React.Component<IListItemPickerProps, IListI
     event.preventDefault();
 
     if (this.state.isRequired && this.state.selectedItems.length === 0) {
-      this.setState({ errorMessage: 'Por favor indique um valor válido.' });
+      this.setState({ errorMessage: strings.RequiredMessage });
     } else {
       this.setState({ errorMessage: '' });
     }
@@ -116,7 +116,7 @@ export class ListItemPicker extends React.Component<IListItemPickerProps, IListI
 
     this.setState({
       selectedItems: selectedItems,
-      errorMessage: this.state.isRequired && selectedItems.length == 0 ? "Por favor indique um valor válido." : ''
+      errorMessage: this.state.isRequired && selectedItems.length == 0 ? strings.RequiredMessage : ''
     });
     this.props.onSelectedItem(selectedItems);
   };
