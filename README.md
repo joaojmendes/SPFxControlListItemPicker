@@ -4,7 +4,7 @@ This control allows you to select one or more items from a list. The List can be
 
 Here is an example of the control:
 
-![ListItemPicker select list items](/SPFxControlListItemPicker/blob/master/assets/ListItemPicker-selectedItems.png)
+![ListItemPicker select list items](../assets/ListItemPicker-selectedItems.png)
 
 ![ListItemPicker select list items](../SPFxControlListItemPickerr/assets/ListItemPicker2.png)
 
