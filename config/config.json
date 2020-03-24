@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "teste-list-item-picker-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/testeListItemPicker/TesteListItemPickerWebPart.js",
+          "manifest": "./src/webparts/testeListItemPicker/TesteListItemPickerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TesteListItemPickerWebPartStrings": "lib/webparts/testeListItemPicker/loc/{locale}.js",
+    "ListItemPickerStrings": "lib/controls/listItemPicker/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
