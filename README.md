@@ -4,9 +4,9 @@ This control allows you to select one or more items from a list. The List can be
 
 Here is an example of the control:
 
-![ListItemPicker select list items](../assets/ListItemPicker-selectedItems.png) 
+![ListItemPicker select list items](/assets/ListItemPicker2.png) 
 
-![ListItemPicker select list items](../assets/ListItemPicker2.png)
+![ListItemPicker select list items](/assets/ListItemPicker2.png)
 
 
 ![ListItemPicker select list items](../assets/ListItemPicker4.png)
